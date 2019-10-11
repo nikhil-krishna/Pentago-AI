@@ -1,0 +1,632 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     29358,        623]
+NotebookOptionsPosition[     28390,        584]
+NotebookOutlinePosition[     28734,        599]
+CellTagsIndexPosition[     28691,        596]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7023821484958525`*^9, 3.702382155675952*^9}}],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\nkh05841\\\\Dropbox\\\\Dropbox\\\\2016-17\\\\\
+Spring 2017\\\\MATH 371\\\\Project\"\>"], "Output",
+ CellChangeTimes->{{3.7023821560834713`*^9, 3.7023821804519567`*^9}, 
+   3.7024772491181707`*^9, 3.702477297723528*^9, 3.7024792897787976`*^9, 
+   3.702479578881315*^9, 3.7024889810731115`*^9, 3.7024892352656837`*^9, 
+   3.7024894666132345`*^9, {3.7024909805981445`*^9, 3.702491047210518*^9}, {
+   3.7024910934603033`*^9, 3.7024911039683895`*^9}, 3.70249119084906*^9, 
+   3.7024912730068336`*^9, 3.7024913934331303`*^9, 3.702491801847253*^9, 
+   3.702492464267871*^9, {3.702496760099703*^9, 3.7024967815496173`*^9}, {
+   3.7024968441637573`*^9, 3.702496886253604*^9}, 3.7024971745669436`*^9, 
+   3.702497207377739*^9, 3.702576847466067*^9, 3.7025769465775285`*^9, 
+   3.7025805144877386`*^9, 3.7026095283393993`*^9, 3.7026101029231415`*^9, 
+   3.70263609460595*^9, 3.702655257007159*^9, 3.7026553381832848`*^9, 
+   3.702687038344288*^9, 3.7026898663392005`*^9, 3.702718348994921*^9, 
+   3.702727202569971*^9, 3.702730824986844*^9, 3.7027309865162616`*^9, 
+   3.702732653755891*^9, 3.7027327911171412`*^9, 3.702732826771283*^9, 
+   3.702743976501148*^9, 3.7027557257932243`*^9, {3.702756887741866*^9, 
+   3.7027569236654143`*^9}, 3.7027589856254067`*^9, 3.702759033802737*^9, 
+   3.702760111046688*^9, 3.7027614065213594`*^9, 3.7027735114427633`*^9, 
+   3.702777200470623*^9, 3.7028142861225944`*^9, 3.7028143291675167`*^9, 
+   3.702829076916402*^9, 3.702830699320842*^9, 3.7028351548492823`*^9, 
+   3.702835293084996*^9, 3.7028353423025618`*^9, {3.7028359568323565`*^9, 
+   3.702835976966033*^9}, 3.7028361533796005`*^9, 3.702867809925536*^9, 
+   3.7028682453041735`*^9, {3.702868284514187*^9, 3.702868308519466*^9}, 
+   3.70286893012459*^9, 3.702869040470838*^9, 3.702869275403172*^9, 
+   3.702869528446641*^9, 3.7028707710829077`*^9, 3.702870824647411*^9, 
+   3.70287133134573*^9, 3.70287171707752*^9, 3.7028904065216656`*^9, 
+   3.7028904709402857`*^9, 3.702897265564802*^9, 3.7028973051879997`*^9, 
+   3.7028973417374887`*^9, 3.702897434158901*^9, 3.7028976309002323`*^9, 
+   3.702899334915987*^9, 3.7028994021057005`*^9, 3.7029055692199144`*^9, 
+   3.7029056428082514`*^9, 3.702905792147273*^9, 3.702931049555764*^9, 
+   3.702931094827943*^9, 3.702936781890788*^9, 3.702937251316893*^9, 
+   3.702941649736142*^9, 3.7029509277923365`*^9, 3.7029510248293285`*^9, 
+   3.7029865886908484`*^9, 3.7029869677344637`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Images", "Subsection",
+ CellChangeTimes->{{3.7029051686550827`*^9, 3.702905169895581*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Import", " ", "Images"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"image", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{"\"\<pentagoscreen.png\>\"", ",", " ", "\"\<PNG\>\""}], "]"}]}],
+     ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"image2", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{"\"\<instructions.png\>\"", ",", " ", "\"\<PNG\>\""}], "]"}]}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.701608986118709*^9, 3.7016089930652757`*^9}, {
+  3.702339876882559*^9, 3.7023398806390123`*^9}, {3.7029051498835096`*^9, 
+  3.702905153617035*^9}, {3.7029051946797514`*^9, 3.702905234423181*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Play 1 Player Function", "Subsection",
+ CellChangeTimes->{{3.702905215398964*^9, 3.702905220385028*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"play1PlayerGame", "[", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Make", " ", "a", " ", "Palette"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"CreatePalette", "[", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Stuff", " ", "inside", " ", "color", " ", "screen"}], " ", 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Choose the color of your gamepiece and the color of the AI:\>\"", 
+      ",", "\"\<Player 1:\>\"", ",", 
+      RowBox[{"ColorSlider", "[", 
+       RowBox[{"Dynamic", "[", "player1Color", "]"}], "]"}], ",", " ", 
+      "\"\<Computer AI:\>\"", ",", 
+      RowBox[{"ColorSlider", "[", 
+       RowBox[{"Dynamic", "[", "player2Color", "]"}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
+       RowBox[{"Play", " ", "Game", " ", "Button"}], " ", "*)"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"Button", "[", 
+       RowBox[{"\"\<Play Game\>\"", ",", " ", 
+        RowBox[{
+         RowBox[{"NotebookClose", "[", "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Playing", " ", "Screen"}], " ", "*)"}], 
+         "\[IndentingNewLine]", 
+         RowBox[{"CreatePalette", "[", "\[IndentingNewLine]", 
+          RowBox[{"(*", " ", 
+           RowBox[{"Stuff", " ", "inside", " ", "playing", " ", "screen"}], 
+           " ", "*)"}], "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"gameBoardForAI", "[", "]"}], ",", 
+             RowBox[{"Row", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Button", "[", 
+                 RowBox[{"\"\<Start Over\>\"", ",", 
+                  RowBox[{
+                   RowBox[{"NotebookClose", "[", "]"}], ";", 
+                   RowBox[{"pieces", "=", 
+                    RowBox[{"makeDisks", "[", 
+                    RowBox[{"gameBoardPiecesInitial", "[", "]"}], "]"}]}], 
+                   ";", 
+                   RowBox[{"count", "=", "0"}], ";", 
+                   RowBox[{"play1PlayerGame", "[", "]"}]}]}], "]"}], ",", 
+                RowBox[{
+                "Text", "[", 
+                 "\"\<                                                        \
+                                  \>\"", "]"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"(*", " ", 
+                 RowBox[{"Hint", " ", "Button"}], " ", "*)"}], 
+                "\[IndentingNewLine]", 
+                RowBox[{"Button", "[", 
+                 RowBox[{"\"\<Hint\>\"", ",", 
+                  RowBox[{
+                   RowBox[{"pieces", "=", 
+                    RowBox[{"playBestMove", "[", 
+                    RowBox[{"pieces", ",", "1"}], "]"}]}], ";", 
+                   RowBox[{"count", "++"}]}]}], "]"}]}], "}"}], "]"}]}], 
+            "}"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"WindowMargins", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"Automatic", ",", "Automatic"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"Automatic", ",", "Automatic"}], "}"}]}], "}"}]}], ",",
+            "\[IndentingNewLine]", 
+           RowBox[{"Background", "\[Rule]", "White"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"WindowTitle", "\[Rule]", "\"\<One Player Mode\>\""}]}], 
+          "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}]}], 
+     "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"WindowTitle", "\[Rule]", "\"\<Choose Colors\>\""}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"WindowMargins", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"Automatic", ",", "Automatic"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"Automatic", ",", "Automatic"}], "}"}]}], "}"}]}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Background", "\[Rule]", "White"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.702385847495056*^9, 3.702385874981513*^9}, {
+   3.702385919062895*^9, 3.702385924310322*^9}, {3.7023859555127945`*^9, 
+   3.702385972262707*^9}, {3.7023860313334017`*^9, 3.7023860455062*^9}, 
+   3.702386158434559*^9, {3.7024772703883486`*^9, 3.7024772827240667`*^9}, {
+   3.7024907332892246`*^9, 3.702490737594305*^9}, {3.702490777228902*^9, 
+   3.7024907799298196`*^9}, {3.702491080830446*^9, 3.702491085266038*^9}, {
+   3.702491248200717*^9, 3.702491251557501*^9}, {3.7024912854830112`*^9, 
+   3.7024912897191095`*^9}, 3.702491664918884*^9, {3.702611282352264*^9, 
+   3.7026113163829517`*^9}, {3.7026361634006042`*^9, 
+   3.7026361770024633`*^9}, {3.7027437130977936`*^9, 3.702743817658805*^9}, {
+   3.702743901479991*^9, 3.7027439720750904`*^9}, {3.7028352342511015`*^9, 
+   3.702835234934139*^9}, {3.7028352837131276`*^9, 3.7028352899264307`*^9}, {
+   3.7028361108896785`*^9, 3.702836144546528*^9}, {3.7028690217702622`*^9, 
+   3.702869023639916*^9}, {3.7028692311510763`*^9, 3.702869233101448*^9}, {
+   3.702897240178102*^9, 3.7028972431268005`*^9}, {3.7028973022155423`*^9, 
+   3.7028973367291365`*^9}, 3.702905176522029*^9, {3.702905238730343*^9, 
+   3.7029053261005716`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Play 2 Player Function", "Subsection",
+ CellChangeTimes->{{3.7029053339600163`*^9, 3.7029053387209167`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"play2PlayerGame", "[", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Make", " ", "a", " ", "palette"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"CreatePalette", "[", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Stuff", " ", "inside", " ", "color", " ", "screen"}], " ", 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<Choose your colors:\>\"", ",", "\"\<Player 1:\>\"", ",", 
+      RowBox[{"ColorSlider", "[", 
+       RowBox[{"Dynamic", "[", "player1Color", "]"}], "]"}], ",", 
+      "\"\<Player 2:\>\"", ",", 
+      RowBox[{"ColorSlider", "[", 
+       RowBox[{"Dynamic", "[", "player2Color", "]"}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
+       RowBox[{"Play", " ", "Game", " ", "Button"}], " ", "*)"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"Button", "[", 
+       RowBox[{"\"\<Play Game\>\"", ",", " ", 
+        RowBox[{
+         RowBox[{"NotebookClose", "[", "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Create", " ", "game", " ", "screen"}], " ", "*)"}], 
+         "\[IndentingNewLine]", 
+         RowBox[{"CreatePalette", "[", "\[IndentingNewLine]", 
+          RowBox[{"(*", " ", 
+           RowBox[{"Stuff", " ", "in", " ", "playing", " ", "screen"}], " ", 
+           "*)"}], "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"gameBoardFor2Player", "[", "]"}], ",", 
+             RowBox[{"Row", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Button", "[", 
+                 RowBox[{"\"\<Start Over\>\"", ",", 
+                  RowBox[{
+                   RowBox[{"NotebookClose", "[", "]"}], ";", 
+                   RowBox[{"pieces", "=", 
+                    RowBox[{"makeDisks", "[", 
+                    RowBox[{"gameBoardPiecesInitial", "[", "]"}], "]"}]}], 
+                   ";", 
+                   RowBox[{"count", "=", "0"}], ";", "\[IndentingNewLine]", 
+                   RowBox[{"play2PlayerGame", "[", "]"}]}]}], "]"}], ",", 
+                RowBox[{
+                "Text", "[", 
+                 "\"\<                                                        \
+                                  \>\"", "]"}]}], "}"}], "]"}]}], "}"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"WindowTitle", "\[Rule]", "\"\<Two Player Mode\>\""}], ",",
+            "  ", "\[IndentingNewLine]", 
+           RowBox[{"WindowMargins", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"Automatic", ",", " ", "Automatic"}], "}"}], ",", " ", 
+              RowBox[{"{", 
+               RowBox[{"Automatic", ",", " ", "Automatic"}], "}"}]}], "}"}]}],
+            ",", "\[IndentingNewLine]", 
+           RowBox[{"Background", "\[Rule]", "White"}]}], 
+          "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}]}], 
+     "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"WindowTitle", "\[Rule]", "\"\<Choose Colors\>\""}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"WindowMargins", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"Automatic", ",", " ", "Automatic"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"Automatic", ",", " ", "Automatic"}], "}"}]}], "}"}]}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Background", "\[Rule]", "White"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGCQAGIQnbT47569U187ct+p2Auib8+oOwiilfa+B9NGPq0s
++4D0m7sWrCD6e/hpKRBdvKBNGkS3S8zUfAWkF/Rl6YDod6tmn/kApOeVuJ4F
+0d+0T10G0RJz+K+AaC/7vLsg+k7OVzCtVij1HETfOl/5BUSf19H8BaLvHwwG
+01nbd7J+BNIvH0SwgWiz8kOOINrF6x2Ybrj+0hNE/56nGwSivU/NYJw57bXj
+lU23mUC09aK1xSDa8en2MhA96WWB9EogHR5kqwSir20SVAfRAiciNEH0hgna
+rSB6n2UtmPYwnTgLRDubnADTl3zPzwfR/wIEFoHo/X+sF68C0ndznoDpS2en
+rwDROsf2gul56tN9twNpLqbDYLrm5nPr3UB607VqTxANAC7F4Gg=
+  "]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Play Function", "Subsection",
+ CellChangeTimes->{{3.7029054507700663`*^9, 3.7029054535905886`*^9}, {
+  3.702905519624626*^9, 3.702905523280389*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"playGame", "[", "]"}], ":=", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Create", " ", "title", " ", "screen"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"CreatePalette", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Show", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Plot", "[", 
+          RowBox[{"1", ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "0", ",", "1000"}], "}"}], ",", 
+           RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+           RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}], ",", 
+         RowBox[{"Graphics", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Inset", "[", 
+             RowBox[{"Magnify", "[", 
+              RowBox[{"image", ",", "6"}], "]"}], "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"(*", " ", "Buttons", " ", "*)"}], "\[IndentingNewLine]", 
+            RowBox[{"Inset", "[", "\[IndentingNewLine]", 
+             RowBox[{"(*", " ", 
+              RowBox[{"Instructions", " ", "Button"}], " ", "*)"}], 
+             "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"Button", "[", 
+               RowBox[{
+                RowBox[{"Style", "[", 
+                 RowBox[{
+                  RowBox[{
+                  "Text", "[", "\"\<Instructions and Rules\>\"", "]"}], ",", 
+                  "White", ",", 
+                  RowBox[{
+                  "FontFamily", "\[Rule]", "\"\<Times New Roman\>\""}], ",", 
+                  " ", 
+                  RowBox[{"FontSize", "\[Rule]", "15"}]}], "]"}], " ", ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"NotebookClose", "[", "]"}], ";", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"CreatePalette", "[", 
+                  RowBox[{
+                   RowBox[{"Graphics", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Inset", "[", 
+                    RowBox[{"Magnify", "[", 
+                    RowBox[{"image2", ",", " ", "2"}], "]"}], "]"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Inset", "[", 
+                    RowBox[{
+                    RowBox[{"Button", "[", 
+                    RowBox[{
+                    RowBox[{"Style", "[", 
+                    RowBox[{
+                    RowBox[{"Text", "[", "\"\<Go Back\>\"", "]"}], ",", 
+                    "White", ",", " ", 
+                    RowBox[{
+                    "FontFamily", "\[Rule]", "\"\<Times New Roman\>\""}], ",",
+                     " ", 
+                    RowBox[{"FontSize", "\[Rule]", "15"}]}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"NotebookClose", "[", "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"playGame", "[", "]"}]}], ",", 
+                    RowBox[{"Background", "\[Rule]", "Black"}]}], 
+                    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"{", 
+                    RowBox[{"Center", ",", 
+                    RowBox[{"-", "0.95"}]}], "}"}]}], "\[IndentingNewLine]", 
+                    "]"}]}], "\[IndentingNewLine]", "}"}], 
+                    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+                   RowBox[{"WindowMargins", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"Automatic", ",", "Automatic"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"Automatic", ",", "Automatic"}], "}"}]}], "}"}]}],
+                    ",", "\[IndentingNewLine]", 
+                   RowBox[{
+                   "WindowTitle", "\[Rule]", "\"\<Instructions\>\""}]}], 
+                  "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
+                RowBox[{"Background", "\[Rule]", "Black"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"{", 
+               RowBox[{"Center", ",", "0.5"}], "}"}]}], "\[IndentingNewLine]",
+              "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Inset", "[", "\[IndentingNewLine]", 
+             RowBox[{"(*", " ", 
+              RowBox[{"1", " ", "player", " ", "button"}], " ", "*)"}], 
+             "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"Button", "[", 
+               RowBox[{
+                RowBox[{"Style", "[", 
+                 RowBox[{
+                  RowBox[{"Text", "[", "\"\<Play 1-Player Mode\>\"", "]"}], 
+                  ",", "White", ",", " ", 
+                  RowBox[{
+                  "FontFamily", "\[Rule]", "\"\<Times New Roman\>\""}], ",", 
+                  " ", 
+                  RowBox[{"FontSize", "\[Rule]", "15"}]}], "]"}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"NotebookClose", "[", "]"}], ";", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"pieces", "=", 
+                  RowBox[{"makeDisks", "[", 
+                   RowBox[{"gameBoardPiecesInitial", "[", "]"}], "]"}]}], ";",
+                  "\[IndentingNewLine]", 
+                 RowBox[{"play1PlayerGame", "[", "]"}]}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"Background", "\[Rule]", "Black"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"Center", ",", "0.3"}], "}"}]}], "\[IndentingNewLine]",
+              "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Inset", "[", "\[IndentingNewLine]", 
+             RowBox[{"(*", " ", 
+              RowBox[{"2", " ", "player", " ", "button"}], " ", "*)"}], 
+             "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"Button", "[", 
+               RowBox[{
+                RowBox[{"Style", "[", 
+                 RowBox[{
+                  RowBox[{"Text", "[", "\"\<Play 2-Player Mode\>\"", "]"}], 
+                  ",", "White", ",", " ", 
+                  RowBox[{
+                  "FontFamily", "\[Rule]", "\"\<Times New Roman\>\""}], ",", 
+                  " ", 
+                  RowBox[{"FontSize", "\[Rule]", "15"}]}], "]"}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"NotebookClose", "[", "]"}], ";", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"pieces", "=", 
+                  RowBox[{"makeDisks", "[", 
+                   RowBox[{"gameBoardPiecesInitial", "[", "]"}], "]"}]}], ";",
+                  "\[IndentingNewLine]", 
+                 RowBox[{"play2PlayerGame", "[", "]"}]}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"Background", "\[Rule]", "Black"}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"{", 
+               RowBox[{"Center", ",", "0.1"}], "}"}]}], "\[IndentingNewLine]",
+              "]"}]}], "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", 
+          "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "850"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"WindowMargins", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Automatic", ",", "Automatic"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Automatic", ",", "Automatic"}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"WindowTitle", "\[Rule]", "\"\<Welcome to Pentago\>\""}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Background", "\[Rule]", "White"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7004017628469634`*^9, 3.700401836029915*^9}, {
+   3.700401869294022*^9, 3.7004019097697268`*^9}, {3.7004019495219526`*^9, 
+   3.7004019495851316`*^9}, {3.7004864993676977`*^9, 
+   3.7004865280727234`*^9}, {3.700487914471739*^9, 3.7004879402006793`*^9}, {
+   3.700487989243765*^9, 3.7004879951254034`*^9}, {3.7004880276077046`*^9, 
+   3.7004880314653807`*^9}, {3.7004883396899967`*^9, 3.70048834188489*^9}, {
+   3.70050366256374*^9, 3.7005036639849763`*^9}, {3.7005047573787055`*^9, 
+   3.700504789755434*^9}, {3.7005048226684456`*^9, 3.700504825941802*^9}, {
+   3.70050824837269*^9, 3.700508262256899*^9}, {3.7005102206455584`*^9, 
+   3.700510251422939*^9}, 3.7005103417879653`*^9, {3.7005104596185107`*^9, 
+   3.7005104652555833`*^9}, {3.7005107039192686`*^9, 3.700510722333477*^9}, {
+   3.7015711417300467`*^9, 3.7015712434221883`*^9}, {3.7015713595297766`*^9, 
+   3.7015713753750253`*^9}, {3.701571417319866*^9, 3.7015714320882845`*^9}, {
+   3.7015716039245925`*^9, 3.7015716596915913`*^9}, {3.701571841491021*^9, 
+   3.7015719941490917`*^9}, {3.7015720277083607`*^9, 3.701572049751995*^9}, {
+   3.70157208304281*^9, 3.701572087412428*^9}, {3.7015723152582455`*^9, 
+   3.7015723699370317`*^9}, {3.7015725224135942`*^9, 3.701572543210043*^9}, {
+   3.701607487427033*^9, 3.701607511468135*^9}, {3.7016082156495695`*^9, 
+   3.7016082584162464`*^9}, {3.7016089011704473`*^9, 
+   3.7016089566431694`*^9}, {3.7016093296817636`*^9, 3.70160936996481*^9}, {
+   3.701609440499015*^9, 3.701609451690547*^9}, {3.7016095329976454`*^9, 
+   3.7016095330808597`*^9}, {3.7016096575441866`*^9, 3.701609707987255*^9}, {
+   3.701609789558973*^9, 3.701609791127079*^9}, {3.7016099257548113`*^9, 
+   3.7016099630465417`*^9}, {3.7016100719901066`*^9, 3.70161014753296*^9}, {
+   3.701610304737012*^9, 3.701610316244622*^9}, {3.7016104440847063`*^9, 
+   3.7016104492544293`*^9}, {3.7016104995452003`*^9, 
+   3.7016105186711206`*^9}, {3.701610560638711*^9, 3.701610561357625*^9}, {
+   3.7016107529813523`*^9, 3.7016107752947035`*^9}, {3.701610820380721*^9, 
+   3.7016108242991695`*^9}, {3.70161108786344*^9, 3.7016111108808126`*^9}, {
+   3.7016113261738663`*^9, 3.701611344898795*^9}, {3.701611438247698*^9, 
+   3.701611524942881*^9}, {3.7019658100166903`*^9, 3.7019658466411753`*^9}, {
+   3.701965977188692*^9, 3.7019659951391335`*^9}, {3.7019660548605967`*^9, 
+   3.70196606116531*^9}, {3.7019738725103893`*^9, 3.7019739075416603`*^9}, {
+   3.7020702869435167`*^9, 3.7020704250595627`*^9}, {3.7020704662226048`*^9, 
+   3.702070623702648*^9}, {3.7020709942296467`*^9, 3.7020710041710467`*^9}, {
+   3.7020710398882666`*^9, 3.7020710756225777`*^9}, {3.702310630104432*^9, 
+   3.7023106637809134`*^9}, {3.7023168638364763`*^9, 3.702316863930244*^9}, {
+   3.702317000020615*^9, 3.7023170224963455`*^9}, {3.7023172399416447`*^9, 
+   3.702317317156576*^9}, {3.702317374380783*^9, 3.7023173870383606`*^9}, {
+   3.7023174227035246`*^9, 3.702317543305605*^9}, {3.702339999307706*^9, 
+   3.702340082134012*^9}, 3.702382202785927*^9, {3.702382251487587*^9, 
+   3.702382353197866*^9}, {3.70238238518511*^9, 3.702382403763155*^9}, {
+   3.702382455110283*^9, 3.70238246747183*^9}, {3.7023825054168334`*^9, 
+   3.7023826523133917`*^9}, {3.702382682511034*^9, 3.70238291123552*^9}, {
+   3.7023829862214346`*^9, 3.7023830137420897`*^9}, {3.7023830454670753`*^9, 
+   3.7023831032340803`*^9}, {3.702383184158993*^9, 3.702383195598709*^9}, {
+   3.702383230152519*^9, 3.702383257128851*^9}, {3.702383338753193*^9, 
+   3.702383375795396*^9}, {3.7023834286352177`*^9, 3.7023834962651587`*^9}, {
+   3.702383593362589*^9, 3.702383649656228*^9}, {3.702383710029641*^9, 
+   3.702383732501528*^9}, {3.702383762782446*^9, 3.7023837739272366`*^9}, {
+   3.7023850032698326`*^9, 3.702385004340948*^9}, {3.7023850374491053`*^9, 
+   3.7023851954389515`*^9}, {3.7023852533629436`*^9, 3.702385418495137*^9}, {
+   3.7023854970584574`*^9, 3.702385808976282*^9}, {3.7023858664126062`*^9, 
+   3.702385870973693*^9}, {3.7023860685376987`*^9, 3.7023860838105536`*^9}, {
+   3.70238614281244*^9, 3.702386146999734*^9}, {3.702386265399171*^9, 
+   3.7023862830453415`*^9}, {3.7023865814025345`*^9, 
+   3.7023865824660378`*^9}, {3.702489529767907*^9, 3.7024895423536024`*^9}, {
+   3.702489903585743*^9, 3.702489963758335*^9}, {3.7024900358241315`*^9, 
+   3.70249005718708*^9}, {3.7024900974004498`*^9, 3.7024901485286493`*^9}, 
+   3.7024901845629435`*^9, {3.7024902550118217`*^9, 3.702490569545568*^9}, {
+   3.70249069580849*^9, 3.7024906976736355`*^9}, {3.702492778767152*^9, 
+   3.7024927792915025`*^9}, {3.7024967559549785`*^9, 
+   3.7024967791441607`*^9}, {3.702496839709977*^9, 3.7024968841637115`*^9}, {
+   3.7026101522718945`*^9, 3.702610155759041*^9}, {3.7026101941119237`*^9, 
+   3.7026102778681293`*^9}, {3.7026103817415156`*^9, 3.702610418358641*^9}, {
+   3.7026104996045046`*^9, 3.7026105390625687`*^9}, {3.702610571496234*^9, 
+   3.702610616444513*^9}, {3.7026106790500717`*^9, 3.7026107908083305`*^9}, {
+   3.702610827249696*^9, 3.7026108949351172`*^9}, {3.7026110064359865`*^9, 
+   3.7026110115135727`*^9}, {3.702611091481142*^9, 3.7026110993622723`*^9}, {
+   3.7026111574516063`*^9, 3.7026111671046906`*^9}, {3.702611219166606*^9, 
+   3.702611219500207*^9}, {3.7026112516760445`*^9, 3.7026112553363047`*^9}, {
+   3.702655270690448*^9, 3.702655271558628*^9}, {3.702655310172019*^9, 
+   3.7026553451121073`*^9}, {3.7026625704361143`*^9, 
+   3.7026627600212803`*^9}, {3.702662814377884*^9, 3.7026628586205187`*^9}, {
+   3.702662900815511*^9, 3.7026629727084675`*^9}, {3.7026630271727333`*^9, 
+   3.7026630621696806`*^9}, {3.702663097327132*^9, 3.702663183545414*^9}, {
+   3.7026634315617275`*^9, 3.7026634544649134`*^9}, {3.7027182470275617`*^9, 
+   3.702718366719946*^9}, {3.7027557597159147`*^9, 3.7027557701847286`*^9}, 
+   3.70275889645189*^9, {3.702758949172475*^9, 3.702759031067232*^9}, {
+   3.702835313467827*^9, 3.7028353401759796`*^9}, {3.7029054552610464`*^9, 
+   3.702905505605569*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Play the Game", "Subsection",
+ CellChangeTimes->{{3.702905533480488*^9, 3.7029055395835934`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"playGame", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.7029055423257017`*^9, 3.7029055531049066`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{FrontEndObject[
+    LinkObject["sdijh_shm", 3, 1]],33,
+   "FrontEndObject[LinkObject[\"sdijh_shm\", 3, 1]]","33",
+   "\"Welcome to Pentago\""},
+  "NotebookObjectUnsaved"]], "Output",
+ CellChangeTimes->{3.7029055702446404`*^9, 3.702905643965935*^9, 
+  3.7029057928445096`*^9, 3.7029310513915596`*^9, 3.702931095745148*^9, 
+  3.7029367826898365`*^9, 3.702937252135885*^9, 3.70294165084182*^9, 
+  3.702950929047353*^9, 3.7029510255427504`*^9, 3.702986589679383*^9, 
+  3.7029869685060034`*^9}]
+}, Open  ]]
+}, Closed]]
+},
+WindowSize->{1280, 646},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 172, 3, 31, "Input"],
+Cell[755, 27, 2450, 33, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3242, 65, 96, 1, 49, "Subsection"],
+Cell[3341, 68, 710, 17, 72, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[4088, 90, 110, 1, 41, "Subsection"],
+Cell[4201, 93, 5244, 108, 552, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9482, 206, 114, 1, 41, "Subsection"],
+Cell[9599, 209, 4014, 88, 492, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[13650, 302, 154, 2, 41, "Subsection"],
+Cell[13807, 306, 13744, 250, 1012, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[27588, 561, 103, 1, 41, "Subsection"],
+Cell[CellGroupData[{
+Cell[27716, 566, 126, 2, 31, "Input"],
+Cell[27845, 570, 517, 10, 70, "Output"]
+}, Open  ]]
+}, Closed]]
+}
+]
+*)
+
+(* End of internal cache information *)
